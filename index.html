@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Life Beach Tennis · 6 quadras de areia no Park Way, Brasília</title>
+<meta name="description" content="Life Beach Tennis: 6 quadras de areia exclusivas no Park Way, em Águas Claras. Aulas, Day Use, Wellhub e TotalPass, bar e eventos. Agende sua aula experimental.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F3F0E8">
+<meta property="og:title" content="Life Beach Tennis">
+<meta property="og:description" content="O jogo é só o pretexto para viver o resto. 6 quadras de areia, aulas e Day Use no Park Way.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231B1A18'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23DCF341'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- Abertura -->
+<div class="abertura" id="abertura" aria-hidden="true">
+  <div class="abertura-marca"><span>L</span><span>I</span><span>F</span><span>E</span></div>
+  <p>beach tennis</p>
+</div>
+
+<div class="progresso" aria-hidden="true"><i id="progresso"></i></div>
+
+<!-- Topo -->
+<header class="topo" id="topo">
+  <a class="marca" href="#inicio" aria-label="Life Beach Tennis, início">
+    <b>LIFE</b><small>beach tennis</small>
+  </a>
+  <nav class="topo-nav" aria-label="Seções">
+    <a href="#planos">Planos</a>
+    <a href="#day-use">Day Use</a>
+    <a href="#professores">Professores</a>
+    <a href="#bar">Bar</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#lojinha">Lojinha</a>
+  </nav>
+  <div class="topo-acoes">
+    <button class="btn btn-p" data-abrir-folha>Aula experimental</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <a href="#planos"><small>01</small>Planos</a>
+    <a href="#day-use"><small>02</small>Day Use</a>
+    <a href="#convenios"><small>03</small>Wellhub e TotalPass</a>
+    <a href="#professores"><small>04</small>Professores</a>
+    <a href="#comunidade"><small>··</small>Comunidade</a>
+    <a href="#bar"><small>05</small>Bar e cozinha</a>
+    <a href="#eventos"><small>06</small>Eventos</a>
+    <a href="#lojinha"><small>07</small>Lojinha</a>
+    <a href="#local"><small>08</small>Como chegar</a>
+  </nav>
+</div>
+
+<main id="inicio">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-sol" aria-hidden="true"></div>
+  <div class="hero-texto">
+    <p class="status" id="status"><i></i><span>Park Way · Brasília</span></p>
+    <h1 class="tit hero-tit" data-palavras>O jogo é só o <em>pretexto</em> para <em>viver o resto.</em></h1>
+    <p class="lead" data-rev>Seis quadras de areia exclusivas no Park Way, em Águas Claras. Aulas de manhã e à noite, Day Use todos os dias e um bar para esticar o pós-jogo.</p>
+    <div class="hero-acoes" data-rev>
+      <button class="btn btn-g" data-abrir-folha data-ima>Agendar aula experimental <span class="btn-bola"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      <button class="btn-story" id="abrirStories">
+        <span class="anel"><img src="img/story/horario.webp" alt="" width="44" height="44"></span>
+        <span><b>Ver destaques</b><small>Horários, planos e Day Use</small></span>
+      </button>
+    </div>
+    <ul class="hero-fatos" data-rev>
+      <li><b>6</b><span>quadras de areia</span></li>
+      <li><b>R$ 20</b><span>aula experimental</span></li>
+      <li><b>07h–23h</b><span>segunda a sexta</span></li>
+    </ul>
+  </div>
+
+  <div class="hero-arte" id="heroArte">
+    <div class="arco" data-prof="0.5">
+      <img src="img/arena.webp" alt="Quadras de areia da Life Beach Tennis no fim da tarde, com alunos jogando" width="816" height="1172" fetchpriority="high">
+    </div>
+    <div class="selo" data-prof="1.4" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+        <text><textPath href="#circ">LIFE BEACH TENNIS • PARK WAY • BRASÍLIA • </textPath></text></svg>
+      <i></i>
+    </div>
+    <div class="vidro chip-a" data-prof="1.1"><small>Aula experimental</small><b>R$ 20</b><span>abate na 1ª mensalidade</span></div>
+    <div class="vidro chip-b" data-prof="0.8"><i class="ponto"></i><span><b>Day Use</b> todos os dias</span></div>
+  </div>
+  <a class="descer" href="#manifesto" aria-label="Rolar para baixo"><span></span></a>
+</section>
+
+<!-- Faixa -->
+<div class="faixa" aria-hidden="true"><div class="faixa-trilho" id="faixa"></div></div>
+
+<!-- MANIFESTO -->
+<section class="sec manifesto" id="manifesto">
+  <p class="rotulo" data-rev><span>A Life</span></p>
+  <p class="manifesto-texto" data-encher>Um lugar para jogar, aprender e ficar. Areia nos pés, aula com quem compete de verdade, mesa posta depois do último ponto. Você + Life = deu match.</p>
+  <ul class="placar" id="placar">
+    <li data-rev><b data-contar="6">6</b><span>quadras de areia exclusivas</span></li>
+    <li data-rev><b data-contar="6">6</b><span>professores na equipe</span></li>
+    <li data-rev><b data-contar="2">2</b><span>anos de história</span></li>
+    <li data-rev><b data-contar="2256" data-milhar>2.256</b><span>seguidores no Instagram</span></li>
+  </ul>
+  <div class="fotos">
+    <figure class="foto foto-g" data-rev><img src="img/arena-jogo.webp" alt="Vista de cima das quadras de areia da Life, com duas alunas jogando e guarda-sóis amarelos" loading="lazy" width="1360" height="906"><figcaption>Seis quadras de areia, lado a lado</figcaption></figure>
+    <figure class="foto foto-p" data-rev style="--atraso:120ms"><img src="img/arena-quadra.webp" alt="Quadra de areia da Life Beach Tennis com céu azul" loading="lazy" width="1360" height="906"><figcaption>Areia boa e céu de Brasília</figcaption></figure>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section class="sec planos" id="planos">
+  <div class="sec-cab">
+    <p class="rotulo" data-rev><span>Planos</span></p>
+    <h2 class="tit" data-palavras>Monte o seu <em>plano.</em></h2>
+    <p class="sub" data-rev>Escolha com ou sem Day Use, o ciclo e quantas vezes por semana. O valor aparece na hora.</p>
+  </div>
+
+  <div class="calc" data-rev>
+    <div class="calc-controles">
+      <div class="grupo"><label>Day Use</label><div class="seg" id="segDay" role="group" aria-label="Day Use"></div></div>
+      <div class="grupo"><label>Ciclo</label><div class="seg" id="segCiclo" role="group" aria-label="Ciclo"></div></div>
+      <div class="grupo"><label>Frequência</label><div class="seg" id="segVezes" role="group" aria-label="Frequência"></div></div>
+      <ul class="calc-notas" id="calcNotas"></ul>
+    </div>
+    <div class="calc-res">
+      <p class="calc-nome" id="calcNome"></p>
+      <p class="calc-preco"><small>R$</small><b id="calcPreco">310</b><span>/mês</span></p>
+      <ul class="calc-ins" id="calcIns"></ul>
+      <a class="btn btn-lima" id="calcBtn" target="_blank" rel="noopener">Quero esse plano <span class="btn-bola"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <p class="calc-obs">Taxa de matrícula: R$ 60. Valores dos destaques do Instagram.</p>
+    </div>
+  </div>
+
+  <div class="trio">
+    <article class="cartao" data-rev>
+      <p class="etq">Clubinho</p>
+      <h3>Mensalidade do Clubinho</h3>
+      <ul class="precos" id="clubinho"></ul>
+    </article>
+    <article class="cartao" data-rev>
+      <p class="etq">Juvenis · Prof. Hudson</p>
+      <h3>Do primeiro saque ao treino</h3>
+      <ul class="precos" id="juvenis"></ul>
+    </article>
+    <article class="cartao cartao-escuro" data-rev>
+      <p class="etq">Bom saber</p>
+      <h3>O que vem junto</h3>
+      <ul class="lista" id="bomSaber"></ul>
+    </article>
+  </div>
+</section>
+
+<!-- DAY USE (rolagem com zoom) -->
+<section class="palco" id="day-use">
+  <div class="pino">
+    <div class="quadro" id="quadro">
+      <div class="quadro-info">
+        <p class="rotulo claro"><span>Day Use</span></p>
+        <h2 class="tit">Veio só para <em>jogar?</em></h2>
+        <p class="sub">Não precisa ser aluno. Reúna a turma, escolha o dia e veja quantas quadras ficam liberadas para o Day Use e o Clubinho.</p>
+        <p class="quadro-preco"><b id="duPreco">R$ 25</b><span>por pessoa, para quem não é aluno</span></p>
+        <a class="btn btn-lima" id="duBtn" target="_blank" rel="noopener">Checar disponibilidade <span class="btn-bola"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <div class="quadro-grade">
+        <div class="dias" id="duDias" role="tablist" aria-label="Dia da semana"></div>
+        <ul class="slots" id="duSlots"></ul>
+        <p class="quadro-obs">Quadras liberadas para Day Use e Clubinho em cada período. Nos outros horários, consulte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONVÊNIOS -->
+<section class="sec convenios" id="convenios">
+  <div class="sec-cab">
+    <p class="rotulo" data-rev><span>Wellhub · TotalPass</span></p>
+    <h2 class="tit" data-palavras>Seu benefício <em>vale areia.</em></h2>
+    <p class="sub" data-rev>A Life aceita Wellhub e TotalPass. Veja quantos check-ins cada plano dá e como funciona.</p>
+  </div>
+  <div class="niveis" id="niveis"></div>
+  <div class="abas" data-rev>
+    <div class="abas-nav" id="abasNav" role="tablist"></div>
+    <ul class="abas-lista" id="abasLista"></ul>
+  </div>
+</section>
+
+<!-- PROFESSORES -->
+<section class="sec professores" id="professores">
+  <div class="sec-cab lado">
+    <div>
+      <p class="rotulo" data-rev><span>Equipe</span></p>
+      <h2 class="tit" data-palavras>Quem ensina também <em>compete.</em></h2>
+    </div>
+    <div class="setas" data-rev><button data-seta="-1" data-alvo="profTrilho" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button data-seta="1" data-alvo="profTrilho" aria-label="Próximo"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  </div>
+  <div class="trilho" id="profTrilho" data-arrastar></div>
+</section>
+
+<!-- COMUNIDADE -->
+<section class="comunidade" id="comunidade">
+  <div class="sec-cab com-cab">
+    <p class="rotulo" data-rev><span>Comunidade</span></p>
+    <h2 class="tit" data-palavras>Muito além <em>do beach.</em></h2>
+    <p class="sub" data-rev>Almoço com a turma, troca de faixa, campeonato interno, festa de aniversário. Na Life, o jogo junta gente.</p>
+  </div>
+  <div class="com-trilho">
+    <div class="com-faixa" id="comFaixa">
+      <figure class="com-foto" style="--ar: 748 / 1156"><img src="img/comunidade-almoco.webp" alt="Mesa comprida cheia de alunos almoçando no bar coberto da Life" width="748" height="1156"><figcaption>Mesa cheia depois do jogo</figcaption></figure>
+      <div class="com-card com-lima"><p>Uma <em>comunidade.</em></p><p>Uma <em>experiência.</em></p><small>Você + Life = deu match</small></div>
+      <figure class="com-foto baixa" style="--ar: 828 / 1192"><img src="img/comunidade-faixa.webp" alt="Quatro alunas na quadra segurando a placa Mudamos de faixa" width="828" height="1192"><figcaption>Mudamos de faixa</figcaption></figure>
+      <figure class="com-foto" style="--ar: 956 / 1154"><img src="img/comunidade-jogo.webp" alt="Aluna de rosa com raquete em posição de jogo na areia" width="956" height="1154"><figcaption>Foco na areia</figcaption></figure>
+      <div class="com-card com-escuro baixa"><b>2.256</b><span>pessoas acompanham a Life no Instagram</span><a href="https://www.instagram.com/lifebeachtennis___/" target="_blank" rel="noopener">@lifebeachtennis___ ↗</a></div>
+      <figure class="com-foto" style="--ar: 816 / 1172"><img src="img/arena.webp" alt="Quadras da Life no fim da tarde, com alunos jogando" width="816" height="1172"><figcaption>Fim de tarde no Park Way</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- BAR -->
+<section class="sec bar" id="bar">
+  <div class="sec-cab">
+    <p class="rotulo" data-rev><span>Bar e cozinha</span></p>
+    <h2 class="tit" data-palavras>Depois do jogo, <em>a mesa.</em></h2>
+    <p class="sub" data-rev>Chapa, espetinho e cerveja gelada com vista para a areia. Alguns pratos que passam pelos stories da casa.</p>
+  </div>
+  <div class="pratos" id="pratos"></div>
+</section>
+
+<!-- EVENTOS -->
+<section class="sec eventos" id="eventos">
+  <div class="eventos-grade">
+    <div class="agenda">
+      <p class="rotulo" data-rev><span>Programação</span></p>
+      <h2 class="tit" data-palavras>O que vem <em>por aí.</em></h2>
+      <ul class="agenda-lista" id="agenda"></ul>
+    </div>
+    <article class="festa" data-rev>
+      <div class="festa-baloes" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p class="etq">Aniversários e confraternizações</p>
+      <h3>Comemore o seu <em>aniversário</em> com a gente</h3>
+      <p class="festa-nome" id="festaNome"></p>
+      <ul class="festa-inc" id="festaInc"></ul>
+      <p class="festa-card" id="festaCard"></p>
+      <div class="festa-pe">
+        <p class="festa-preco"><small>Pacote promocional</small><b id="festaPreco"></b><span id="festaPag"></span></p>
+        <a class="btn btn-g" id="festaBtn" target="_blank" rel="noopener">Reservar data <span class="btn-bola"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <p class="festa-aviso" id="festaAviso"></p>
+    </article>
+  </div>
+</section>
+
+<!-- LOJINHA -->
+<section class="sec lojinha" id="lojinha">
+  <div class="sec-cab lado">
+    <div>
+      <p class="rotulo" data-rev><span>Lojinha</span></p>
+      <h2 class="tit" data-palavras>Vista <em>a Life.</em></h2>
+      <p class="sub" data-rev>A coleção da casa, da quadra ao pós-jogo. Escolha a peça e a cor, e peça pelo WhatsApp.</p>
+    </div>
+    <p class="loja-conta" data-rev><b id="lojaTotal">06</b><span>peças na coleção</span></p>
+  </div>
+
+  <div class="loja" id="loja" data-rev>
+    <div class="loja-palco" id="lojaPalco">
+      <span class="loja-num" id="lojaNum" aria-hidden="true">01</span>
+      <span class="loja-luz" aria-hidden="true"></span>
+      <span class="loja-chao" aria-hidden="true"></span>
+      <figure class="loja-fig"><img id="lojaImg" alt="" width="1100" height="580"></figure>
+      <p class="loja-tipo" id="lojaTipo"></p>
+      <div class="loja-nav">
+        <button type="button" data-loja="-1" aria-label="Peça anterior"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+        <span id="lojaPos">01 / 06</span>
+        <button type="button" data-loja="1" aria-label="Próxima peça"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+
+    <div class="loja-info">
+      <div class="loja-txt" id="lojaTxt" aria-live="polite">
+        <h3 id="lojaNome"></h3>
+        <p id="lojaDet"></p>
+      </div>
+      <div class="loja-var">
+        <p><span id="lojaVarRot">Cor</span> · <b id="lojaVarNome"></b></p>
+        <div id="lojaVar" role="group" aria-label="Variação"></div>
+      </div>
+      <div class="loja-compra">
+        <p class="loja-preco"><small>R$</small><b id="lojaPreco"></b></p>
+        <a class="btn btn-g" id="lojaBtn" target="_blank" rel="noopener">Quero essa <span class="btn-bola"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <p class="loja-obs">Tamanhos e disponibilidade direto com a Life, pelo WhatsApp.</p>
+      <ol class="loja-lista" id="lojaLista"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- PARCEIROS -->
+<section class="parceiros" aria-label="Parceiros">
+  <p class="rotulo" data-rev><span>Marcas que caminham com a Life</span></p>
+  <div class="parc-faixa"><div class="parc-trilho" id="parceiros"></div></div>
+</section>
+
+<!-- LOCAL -->
+<section class="sec local" id="local">
+  <div class="local-grade">
+    <div>
+      <p class="rotulo" data-rev><span>Como chegar</span></p>
+      <h2 class="tit" data-palavras>No Park Way, <em>pertinho.</em></h2>
+      <p class="sub" data-rev id="endereco"></p>
+      <ul class="horas" id="horas" data-rev></ul>
+      <div class="local-acoes" data-rev>
+        <a class="btn btn-g" id="wazeBtn" target="_blank" rel="noopener">Abrir no Waze <span class="btn-bola"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="btn btn-c" id="mapsBtn" target="_blank" rel="noopener">Google Maps</a>
+      </div>
+    </div>
+    <div class="mapa" id="mapa" data-rev><div class="mapa-capa"><i></i><span>Mapa</span></div></div>
+  </div>
+</section>
+
+<!-- PERGUNTAS -->
+<section class="sec perguntas" id="perguntas">
+  <div class="sec-cab">
+    <p class="rotulo" data-rev><span>Perguntas</span></p>
+    <h2 class="tit" data-palavras>Antes de <em>entrar em quadra.</em></h2>
+  </div>
+  <div class="faq" id="faq"></div>
+</section>
+
+<!-- FINAL -->
+<section class="final" id="final">
+  <div class="final-bokeh" aria-hidden="true"><i></i><i></i><i></i></div>
+  <article class="perfil" id="perfil">
+    <div class="perfil-topo">
+      <span class="perfil-foto"><b>LIFE</b><small>beach tennis</small></span>
+      <div>
+        <p class="perfil-user">@lifebeachtennis___</p>
+        <ul class="perfil-num" id="perfilNum"></ul>
+      </div>
+    </div>
+    <p class="perfil-bio">🎾 O jogo é só o pretexto para viver o resto<br>🌴 6 quadras de areia exclusivas • Aulas • Day Use<br>📍 Park Way · Águas Claras</p>
+    <div class="perfil-acoes">
+      <a class="btn btn-lima" id="igBtn" target="_blank" rel="noopener">Seguir no Instagram</a>
+      <a class="btn btn-v" id="zapBtn" target="_blank" rel="noopener">Falar com a Life</a>
+    </div>
+  </article>
+  <p class="gigante" id="gigante" aria-label="Você mais Life, deu match"><span>Você + Life</span><span>= deu match</span></p>
+  <button class="btn btn-lima btn-xl" data-abrir-folha data-ima>Agendar aula experimental <span class="btn-bola"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+</section>
+</main>
+
+<footer class="rodape">
+  <a class="marca" href="#inicio"><b>LIFE</b><small>beach tennis</small></a>
+  <p>Park Way · Águas Claras, Brasília-DF</p>
+  <p class="rodape-fim">Proposta de landing page para a <b>Life Beach Tennis</b></p>
+</footer>
+
+<!-- Barra fixa (celular) -->
+<div class="barra" id="barra">
+  <button class="btn btn-g" data-abrir-folha>Aula experimental · R$ 20</button>
+  <a class="barra-zap" id="barraZap" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-5A8.5 8.5 0 1 1 21 11.5Z"/></svg></a>
+</div>
+
+<!-- Folha: aula experimental -->
+<div class="veu" id="veu" hidden></div>
+<aside class="folha" id="folha" role="dialog" aria-modal="true" aria-labelledby="folhaTit" hidden data-lenis-prevent>
+  <button class="fechar" data-fechar aria-label="Fechar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <p class="etq">Aula experimental · R$ 20</p>
+  <h3 id="folhaTit">Sua primeira aula na <em>Life</em></h3>
+  <p class="folha-sub">Se você se matricular, o valor é descontado da primeira mensalidade.</p>
+  <form id="folhaForm" novalidate>
+    <label class="campo"><span>Seu nome</span><input type="text" id="fNome" autocomplete="given-name" placeholder="Como podemos te chamar?"></label>
+    <fieldset><legend>Como você está na areia?</legend><div class="chips" id="fNivel"></div></fieldset>
+    <fieldset><legend>Qual horário encaixa melhor?</legend><div class="chips" id="fPeriodo"></div></fieldset>
+    <div class="previa"><small>Sua mensagem</small><p id="fPrevia"></p></div>
+    <button class="btn btn-g btn-cheio" type="submit">Enviar pelo WhatsApp <span class="btn-bola"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+  </form>
+</aside>
+
+<!-- Stories -->
+<div class="stories" id="stories" hidden role="dialog" aria-modal="true" aria-label="Destaques">
+  <div class="stories-caixa">
+    <div class="stories-barras" id="storiesBarras"></div>
+    <p class="stories-nome"><span class="perfil-foto mini"><b>LIFE</b></span><b id="storiesNome"></b></p>
+    <button class="fechar claro" data-fechar-stories aria-label="Fechar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <img id="storiesImg" alt="">
+    <button class="st-ant" aria-label="Anterior"></button><button class="st-prox" aria-label="Próximo"></button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" defer></script>
+<script src="js/dados.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
